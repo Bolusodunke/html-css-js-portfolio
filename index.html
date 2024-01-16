@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-Theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">  
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">TITO</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact  </a></li>
+        </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">TITO</div>
+    <div class="hamburger-menu"> 
+    <div class="hamburger-icon" onclick="togglemenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="togglemenu()">ABOUT</a></li>
+      <li><a href="#experience" onclick="togglemenu()">EXPERIENCE</a></li>
+      <li><a href="#projects" onclick="togglemenu()">PROJECTS</a></li>
+      <li><a href="#contact " onclick="togglemenu()">CONTACT  </a></li>
+    </div>
+  </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+           <img src="./assets/profile-pic.png" alt="Sodunke Boluwatito profile pic">
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+    <h1 class="title">Sodunke Boluwatito</h1>
+   <p class="section_text_p2">Web Developer</p> 
+  <div class="btn-container">
+  <button
+  class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">DOWNLOAD CV</button>
+  <button
+  class="btn btn-color-2" onclick=" location.href='./#contact'">CONTACT INFO</button>
+  </div>
+  <div id="socials-container">
+    <img src="./assets/linkedin.png" alt="MY LINKEDIN PROFILE" class="icon " onclick="location.href='https://linkedin.com/'">
+    <img src="./assets/github.png" alt="MY GITHUB PROFILE" class="icon " onclick="location.href='https://github.com/'">
+  </div>
+  </div>
+  </section>
+  <section id="about">
+<p class="section_text_p1">Get to know more</p>
+<h1 class="title">About Me</h1>
+<div class="section-container">
+  <div class="section_pic-container">
+    <img src="./assets/about-pic.png" alt="Profile pic" class="about-pic">
+  </div>
+  <div class="about-details-container">
+<div class="about-containers">
+  <div class="details-containers">
+    <img src="./assets/experience.png" alt="experience-icon 
+    " class="icon">
+    <h3>Experience</h3>
+    <p>2+ Years </p> <p class="mecho">Web developer</p>
+  </div>
+  <div class="details-containers">
+    <img src="assets/education.png" alt="education icon" class="icon">
+<h3>Education</h3>
+<p class="mech">Bachelors degree(B.Eng)  </p> <p class="mecho">Mechanical Engineering</p>
+  </div>
+</div>
+<div class="text-container">
+  <p class="paragraph">I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. What would you do if you had a software expert available at your fingertips?</p>
+</div>
+  </div>
+</div>
+<img src="assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+<p class="section_text_p1">Explore My</p>
+<h1 class="text">Experience</h1>
+<div class="experience-details-containers">
+  <div class="about-containers">
+    <div class="details-container">
+      <h2 class="experience-sub-text">Web Developer</h2>
+      <div class="article-container">
+        <article>
+          <img src="assets/checkmark.png" alt="Experience icon" class="icon">
+          <div>
+            <h3>HTML</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/checkmark.png" alt="Experience icon" class="icon">
+          <div>
+            <h3>CSS</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article  class="uiux">
+          <img src="assets/checkmark.png" alt="Experience icon" class="icon">
+          <div>
+            <h3>UI/UX</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="details-container">
+      <h2 class="experience-sub-text">Web Developer</h2>
+      <div class="article-container">
+        <article>
+          <img src="assets/checkmark.png" alt="Experience icon" class="icon">
+          <div>
+            <h3>JavaScript</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/checkmark.png" alt="Experience icon" class="icon">
+          <div>
+            <h3>Git</h3>
+            <p>Experienced</p>
+          </div>
+        </article>
+         
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Explore My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-containers">
+      <div class="about-containers"> 
+      <div class="details_container color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn_container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+        </div>
+      </div>
+      <div class="details_container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn_container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+        </div>
+      </div>
+      <div class="details_container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn_container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="assets/email.png" alt="Email icon" class="icon contact-icon">
+        <p><a href="bolusodunke@gmail.com">bolusodunke@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/">Linkedin</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact  </a></li>
+      </ul>
+      </div>
+    </nav>
+    <p class="copyright">Copyright &#169; 2023 TITO .All Right Reserved.</p>
+  </footer>
+  <script src="script.js"></script>  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
